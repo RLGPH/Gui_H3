@@ -8,9 +8,13 @@ import InfoCard from './components/InfoCard/InfoCard'
 function App() {
   return (
     <>
-      <Header />
-      <InfoCard />
-      <Footer />
+      <Header name="Casper Simon Jensen"/>
+      <InfoCard
+        hobbyOne="Gaming"
+        hobbyTwo="Gå tur med hunde"
+        hobbyThree="... jeg er kedelig XD"
+      />
+      <Footer age="21"/>
     </>
   )
 }

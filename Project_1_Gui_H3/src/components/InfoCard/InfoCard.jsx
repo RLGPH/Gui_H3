@@ -1,12 +1,10 @@
-const InfoCard = () => {
+const InfoCard = ({ hobbyOne, hobbyTwo, hobbyThree }) => {
   return (
-    <>
-      <ul>
-        <li>Gaming</li>
-        <li>Gå tur med hunde</li>
-        <li>..... jeg er kedelig XD</li>
-      </ul>
-    </>
+    <ul>
+      <li>{hobbyOne}</li>
+      <li>{hobbyTwo}</li>
+      <li>{hobbyThree}</li>
+    </ul>
   )
 }
 

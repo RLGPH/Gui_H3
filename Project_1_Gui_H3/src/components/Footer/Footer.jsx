@@ -1,7 +1,7 @@
-const Footer = () => {
+const Footer = ({age}) => {
   return (
     <footer>
-      21
+      {age}
     </footer>
   )
 }

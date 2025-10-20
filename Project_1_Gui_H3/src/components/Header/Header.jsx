@@ -1,7 +1,7 @@
-const Header = () => {
+const Header = ({name}) => {
   return (
     <header>
-      Casper Simon Jensen
+      {name}
     </header>
   )
 }
