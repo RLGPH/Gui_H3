@@ -13,6 +13,7 @@ function App() {
         hobbyOne="Gaming"
         hobbyTwo="Gå tur med hunde"
         hobbyThree="... jeg er kedelig XD"
+        imageSrc={viteLogo}
       />
       <Footer age="21"/>
     </>
