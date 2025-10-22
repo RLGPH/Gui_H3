@@ -1,0 +1,22 @@
+.info-card {
+  background: #4e4d4d;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  width: 250px;
+  margin: 10px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-card__image {
+  width: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.info-card__list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}

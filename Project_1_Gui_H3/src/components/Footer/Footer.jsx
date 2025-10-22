@@ -1,7 +1,9 @@
-const Footer = ({age}) => {
+import './Footer.css'
+
+const Footer = ({ age }) => {
   return (
-    <footer>
-      {age}
+    <footer className="site-footer">
+      <p>Alder: {age}</p>
     </footer>
   )
 }
