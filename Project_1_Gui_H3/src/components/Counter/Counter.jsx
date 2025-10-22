@@ -8,14 +8,19 @@ function Counter() {
   };
 
   const resetClick = () =>{
-    setCount(0)
+    setCount(0);
+  }
+
+  const countDown = () =>{
+    setCount(count - 1);
   }
 
   return (
     <div style={{ margin: "20px 0", textAlign: "center" }}>
       <p>Du har klikket {count} {count === 1 ? "gang" : "gange"}.</p>
-      <button onClick={handleClick}>Count Click</button>
+      <button onClick={handleClick}>Countup Click</button>
       <button onClick={resetClick}>Reset Count</button>
+      <button onClick={countDown}>CountDown Click</button>
     </div>
   );
 }
