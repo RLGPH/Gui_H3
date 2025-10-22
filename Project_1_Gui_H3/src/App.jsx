@@ -6,16 +6,16 @@ import Card from "./components/Card/Card";
 import GridContainer from "./components/GridContainer/GridContainer";
 
 function App() {
-  const cards = Array.from({ length: 9 }, (_, i) => ({
-    title: `Produkt ${i + 1}`,
-    image: `https://picsum.photos/200?random=${i + 1}`,
+  const cards = Array.from({ length: 9 }, () => ({
+    title: "Something",
+    image: holdup,
     price: `${(Math.random() * 500 + 50).toFixed(0)} kr`,
-    description: "Et fedt produkt du bare må eje!",
+    description: "Why",
     buttonText: "Køb nu",
   }));
-
+  
   return (
-    <>
+    <div>
       <Header name="Casper Simon Jensen" />
 
       <InfoCard
@@ -25,7 +25,6 @@ function App() {
         imageSrc={holdup}
       />
 
-      {}
       <GridContainer>
         {cards.map((card, index) => (
           <Card
@@ -40,7 +39,7 @@ function App() {
       </GridContainer>
 
       <Footer age="21" />
-    </>
+    </div>
   );
 }
 

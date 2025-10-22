@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
+  justify-content: flex-start;
+  background-color: #232323;
   border: 2px solid #ddd;
   border-radius: 12px;
   padding: 16px;
+  width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -21,25 +22,25 @@
   width: 100%;
   max-width: 200px;
   border-radius: 10px;
-  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .card__title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin: 10px 0 5px;
+  margin: 5px 0;
 }
 
 .card__price {
   color: #16a34a;
-  font-size: 1.1rem;
+  font-weight: bold;
   margin: 4px 0;
 }
 
 .card__description {
   font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 12px;
+  color: #ffffff;
+  margin: 8px 0 12px;
 }
 
 .card__button {
