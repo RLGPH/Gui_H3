@@ -26,7 +26,6 @@ const ProductsPage = () => {
     fetchProducts();
   }, []);
 
-  // Filtrér produkter efter søgefelt
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -38,7 +37,6 @@ const ProductsPage = () => {
     <div>
       <h1>Produkter</h1>
 
-      {/* Søgefelt */}
       <input
         type="text"
         placeholder="Søg efter produkt..."
@@ -54,15 +52,14 @@ const ProductsPage = () => {
 
       <GridContainer>
         {filteredProducts.map((item) => (
-          <div key={item.id}>
-            <ProductCard
-              title={item.title}
-              price={item.price}
-              description={item.description}
-              image={item.images[0]}
-            />
-            <Link to={`/ProductPage/${item.id}`}>Læs Mere</Link>
-          </div>
+          <ProductCard
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            price={item.price}
+            description={item.description}
+            image={item.images[0]}
+          />
         ))}
       </GridContainer>
     </div>

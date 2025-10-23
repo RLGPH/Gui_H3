@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import ProductsPage from "./ProductsPage";
 
 const SingleProductPage = () => {
   const navigate = useNavigate();
@@ -49,8 +50,14 @@ const SingleProductPage = () => {
       <p>
         <strong>Kategori:</strong> {product.category}
       </p>
+      <p>
+        <strong>Stock:</strong> {product.stock}
+      </p>
+      <p>
+        <strong>Rating:</strong> {product.rating}
+      </p>
       <button
-        onClick={() => navigate(-1)}
+        onClick={() => navigate("/ProductsPage")}
         style={{
           padding: "8px 16px",
           marginTop: "1rem",
@@ -61,7 +68,7 @@ const SingleProductPage = () => {
           cursor: "pointer",
         }}
       >
-        Tilbage
+        Tilbage til Produkter
       </button>
     </div>
   );
