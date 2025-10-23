@@ -19,6 +19,9 @@ export const Navigation = () => {
         <li>
             <Link to="/ContactPage">Contact</Link>
         </li>
+        <li>
+            <Link to="/ProductsPage">Products</Link>
+        </li>
       </ul>
     </nav>
   );

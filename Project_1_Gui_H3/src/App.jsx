@@ -5,7 +5,7 @@ import InfoCardPage from "./pages/InfoCardPage";
 import CounterPage from "./pages/CounterPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-
+import ProductsPage from "./pages/ProductsPage";
 
 function App() {
   
@@ -19,6 +19,7 @@ function App() {
           <Route path="/CounterPage" element={<CounterPage />}/>
           <Route path="/AboutPage" element={<AboutPage />}/>
           <Route path="/ContactPage" element={<ContactPage />} />
+          <Route path="/ProductsPage" element={<ProductsPage />}/>
         </Route>
       </Routes>
       </BrowserRouter>
