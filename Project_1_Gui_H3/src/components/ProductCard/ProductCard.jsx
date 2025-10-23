@@ -3,8 +3,8 @@ import "./ProductCard.css";
 
 const ProductCard = ({ title, price, description, image }) => {
   return (
-    <div className="product-card">
-      <img src={image} alt={title} />
+    <div>
+      <img src={image} alt={title} width={200} />
       <h2>{title}</h2>
       <p>{description}</p>
       <p>Pris: {price} kr</p>
