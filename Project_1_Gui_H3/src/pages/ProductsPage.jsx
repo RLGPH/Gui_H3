@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GridContainer from "../components/GridContainer/GridContainer";
 import ProductCard from "../components/ProductCard/ProductCard";
+import { Link } from "react-router-dom";
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
@@ -52,13 +53,15 @@ const ProductsPage = () => {
 
       <GridContainer>
         {filteredProducts.map((item) => (
-          <ProductCard
-            key={item.id}
-            title={item.title}
-            price={item.price}
-            description={item.description}
-            image={item.images[0]}
-          />
+          <div key={item.id}>
+            <ProductCard
+              title={item.title}
+              price={item.price}
+              description={item.description}
+              image={item.images[0]}
+            />
+            <Link to={`/ProductPage/${item.id}`}>Læs Mere</Link>
+          </div>
         ))}
       </GridContainer>
     </div>
