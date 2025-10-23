@@ -1,8 +1,8 @@
 import React from "react";
-import holdup from "../../public/holdup.jpg"
+import holdup from "../../public/holdup.jpg";
 import InfoCard from "../components/InfoCard/InfoCard";
-import GridContainer from "../components/GridContainer/GridContainer"
-import Card from "../components/Card/Card"
+import GridContainer from "../components/GridContainer/GridContainer";
+import Card from "../components/Card/Card";
 
 const InfoCardPage = () => {
   const cards = Array.from({ length: 9 }, () => ({

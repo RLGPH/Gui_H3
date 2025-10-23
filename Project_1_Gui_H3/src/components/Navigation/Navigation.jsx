@@ -8,19 +8,19 @@ export const Navigation = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-            <Link to="/InfoCardPage">InfoCard</Link>
+          <Link to="/InfoCardPage">InfoCard</Link>
         </li>
         <li>
-            <Link to="/CounterPage">Counter</Link>
+          <Link to="/CounterPage">Counter</Link>
         </li>
         <li>
-            <Link to="/AboutPage">About</Link>
+          <Link to="/AboutPage">About</Link>
         </li>
         <li>
-            <Link to="/ContactPage">Contact</Link>
+          <Link to="/ContactPage">Contact</Link>
         </li>
         <li>
-            <Link to="/ProductsPage">Products</Link>
+          <Link to="/ProductsPage">Products</Link>
         </li>
       </ul>
     </nav>

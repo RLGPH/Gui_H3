@@ -60,7 +60,9 @@ const SingleProductPage = () => {
           border: "none",
           cursor: "pointer",
         }}
-      >Tilbage</button>
+      >
+        Tilbage
+      </button>
     </div>
   );
 };

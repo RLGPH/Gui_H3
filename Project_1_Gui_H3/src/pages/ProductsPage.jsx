@@ -13,7 +13,8 @@ const ProductsPage = () => {
     async function fetchProducts() {
       try {
         const response = await fetch("https://dummyjson.com/products");
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        if (!response.ok)
+          throw new Error(`HTTP error! Status: ${response.status}`);
         const result = await response.json();
         setProducts(result.products);
       } catch (err) {

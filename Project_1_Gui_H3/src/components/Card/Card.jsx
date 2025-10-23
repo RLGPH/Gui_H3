@@ -1,4 +1,4 @@
-import './Card.css'
+import "./Card.css";
 
 const Card = ({ title, image, price, description, buttonText }) => {
   return (
@@ -9,7 +9,7 @@ const Card = ({ title, image, price, description, buttonText }) => {
       <p className="card__description">{description}</p>
       <button className="card__button">{buttonText}</button>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
